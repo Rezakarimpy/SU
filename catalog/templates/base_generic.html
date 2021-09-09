@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %} 
+<head>
+  <title>Shopno Unnoyon Songstha </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-success navbar-light">
+  <!-- Brand/logo -->
+  {% load static %} 
+  <img src="{% static 'image/abc.jpg' %}" style="width:60px; height:60px;">
+  
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href=" {{ book.list.get_absolute_url }}">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"> About Us</a>
+    </li>
+  </ul>
+</nav>
+
+<div class='row d-flex justify-content-center'>
+<div class='text:center'>
+  <h2>একুশে ফেব্রুয়ারি উদযাপন</h2>
+  <div class="card" style="width:400px">
+    <img class="card-img-top" src="{% static 'image/logo.jpg' %}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title"></h4>
+      <p class="card-text">মহান একুশে ফেব্রুয়ারি উপলক্ষে শহীদদের প্রতি সম্মান জানিয়ে পুষ্প অন্জন করছেন স্বপ্ন উন্নয়ন সংস্থার চেয়ারম্যান জহিরুল করিম উক্ত সংস্থার প্রধান নির্বাহী জনাব লিয়াকত হোসেন মজুমদার ও আইনজীবী জনাব জাহাঙ্গীর আলম নান্টু।</p>
+      <a href="#" class="btn btn-info">বিস্তারিত দেখুন</a>
+    </div>
+  </div>
+  </div>
+</div>
+  <br>
+  
+<div class='row d-flex justify-content-center'>
+<div class='text: center'>
+<h2> গনসচেতনতা বৃদ্ধির লক্ষে মাস্ক বিতরন </h2> 
+  <div class="card" style="width:400px">
+  <img class='card-img-top' src= "{% static 'image/mask bitoron.jpg' %}" />
+    <div class="card-body">
+      <h4 class="card-title"> </h4>
+      <p class="card-text"> কোভিড ১৯ মহামারী মোকাবেলা করার লক্ষে গন সচেতনতা বৃদ্ধির জন্য জনসাধারনের নিকট মাস্ক বিতরন করছেন স্বপ্ন উন্নয়ন সংস্থার প্রধান নির্বাহী জনাব মো:লিয়াকত হোসেন মজুমদার ও উক্ত সংস্থার  আইনজীবী জনাব জাহাঙ্গীর আলম নান্টু। </p>
+      <a href="#" class="btn btn-info">বিস্তারিত দেখুন</a>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+ </body>
+ <footer class='bg-success'>
+ <h5> All Right Reserved @2021 Reza Karim </h5>
+ </footer>
+</html>

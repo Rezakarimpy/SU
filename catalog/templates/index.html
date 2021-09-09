@@ -1,0 +1,22 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+
+<h1> Shopno Unnoyon Songstha </h1> 
+
+<p> Welcome to Shopno Unnoyon Songstha, Our Mission is to help the poor and confirm education </p> 
+
+
+<h2> This is the main page of Shopno Unnoyon Songstha </h2> 
+
+
+
+ <ul>
+    <li><strong>Books:</strong> {{ num_books }}</li>
+    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  </ul>
+
+  
+{% endblock %}
